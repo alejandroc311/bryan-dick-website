@@ -1,0 +1,198 @@
+/*DFFAULT OVERRIDES*/
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html, body{
+  width: auto!important;
+  overflow-x: hidden!important;
+
+}
+
+/*STYLE FOR NAV*/
+
+@media only screen and (max-width:400px){
+  .navbar{
+    padding: 1.250rem;
+    text-decoration-color: white;
+  }
+  .navbar-brand{
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media only screen and (min-width:400px) and (max-width:500px) {
+  .navbar{
+    padding: 1.250rem;
+  }
+  .navbar-brand{
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media only screen and (min-width:500px) and (max-width:640px) {
+  .navbar{
+    padding: 1.250rem;
+  }
+  .navbar-brand{
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+@media only screen and (min-width:640px) and (max-width:720px){
+  .navbar{
+    padding: 1.250rem;
+  }
+  .navbar-brand{
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+@media only screen and (min-width:720px) and (max-width:960px) {
+  .navbar{
+    padding: 1.250rem;
+  }
+  .navbar-brand{
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media only screen and (min-width:960px) and (max-width:1140px) {
+  .navbar{
+    padding: 1.250rem;
+  }
+  .navbar-brand{
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+@media only screen and (min-width:1140px) and (max-width:1320px) {
+  .navbar{
+    padding: 1.250rem;
+  }
+  .navbar-brand{
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+@media only screen and (min-width:1320px){
+  .navbar{
+    padding: 1.250rem;
+  }
+  .navbar-brand{
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+
+
+/*
+GLIDER FOR CONTENT IN INDEX PAGE
+*/
+
+
+@media only screen and (max-width:400px){
+  #content-glider{
+    padding: 1.50rem;
+  }
+  .glider-contain{
+    padding: 0px;
+  }
+  .card{
+    margin-right: 1.250rem;
+    margin-left: 1.250rem;
+  }
+}
+
+@media only screen and (min-width:400px) and (max-width:500px) {
+  #content-glider{
+    padding: 1.875rem;
+  }
+  .glider-contain{
+    padding: 0px;
+  }
+  .card{
+    margin-right: 1.250rem;
+    margin-left: 1.250rem;
+  }
+}
+
+@media only screen and (min-width:500px) and (max-width:640px) {
+  #content-glider{
+    padding: 2.50rem;
+  }
+  .glider-contain{
+    padding: 0px;
+  }
+  .card{
+    margin-right: 1.250rem;
+    margin-left: 1.250rem;
+  }
+}
+@media only screen and (min-width:640px) and (max-width:720px){
+  #content-glider{
+    padding: 2.50rem;
+  }
+  .glider-contain{
+    padding: 0px;
+  }
+  .card{
+    margin-right: 1.250rem;
+    margin-left: 1.250rem;
+  }
+}
+@media only screen and (min-width:720px) and (max-width:960px) {
+  #content-glider{
+    padding: 2.50rem;
+  }
+  .glider-contain{
+    padding: 0px;
+  }
+  .card{
+    margin-right: 0.625rem;
+    margin-left: 0.625rem;
+  }
+}
+
+@media only screen and (min-width:960px) and (max-width:1140px) {
+  #content-glider{
+    padding: 2.50rem;
+  }
+  .glider-contain{
+    padding: 0px;
+  }
+  .card{
+    margin-right: 1.25rem;
+    margin-left: 1.25rem;
+  }
+}
+@media only screen and (min-width:1140px) and (max-width:1320px) {
+  #content-glider{
+    padding: 2.50rem;
+  }
+  .glider-contain{
+    padding: 0px;
+  }
+  .card{
+    margin-right: 1.25rem;
+    margin-left: 1.25rem;
+  }
+}
+@media only screen and (min-width:1320px){
+  #content-glider{
+    padding: 2.50rem;
+  }
+  .glider-contain{
+    padding: 0px;
+  }
+  .card{
+    margin-right: 1.25rem;
+    margin-left: 1.25rem;
+  }
+}
