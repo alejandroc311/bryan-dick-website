@@ -8,14 +8,14 @@
 html, body{
   width: auto!important;
   overflow-x: hidden!important;
-  background-color: #f4f5db;
+  background-color: #ffffff;
   font-family: arial;
 
 }
 
-/*STYLE FOR NAV*/
+/*STYLE FOR NAV  #00274D;*/
 nav{
-  background-color: #00274D;
+  background-color: #f4f5db;
 }
 
 #nav-container{
@@ -76,12 +76,20 @@ nav{
   .navbar-brand{
     padding-right:3rem;
   }
+  #brand-container{
+    width:334px;
+    height:100px;
+  }
 }
 @media only screen and (min-width:1140px) and (max-width:1320px) {
   .navbar{
     padding: 1.250rem;
   }
   .navbar-brand{
+  }
+  #brand-container{
+    width:334px;
+    height:100px;
   }
 }
 @media only screen and (min-width:1320px){
@@ -90,59 +98,12 @@ nav{
   }
   .navbar-brand{
   }
-}
-
-
-/*BANNER FOR TITLE CARD*/
-
-#banner{
-  background-image: url("titlecard.png");
-  background-size: 100% 100%;
-}
-
-@media only screen and (max-width:400px){
-  #banner{
-    height:7rem;
+  #brand-container{
+    width:334px;
+    height:100px;
   }
 }
 
-@media only screen and (min-width:400px) and (max-width:500px) {
-  #banner{
-    height:8rem;
-  }
-}
-
-@media only screen and (min-width:500px) and (max-width:640px) {
-  #banner{
-    height:9rem;
-  }
-}
-@media only screen and (min-width:640px) and (max-width:720px){
-  #banner{
-    height:11.750rem;
-  }
-}
-@media only screen and (min-width:720px) and (max-width:960px) {
-  #banner{
-    height: 12.625rem;
-  }
-}
-
-@media only screen and (min-width:960px) and (max-width:1140px) {
-  #banner{
-    height: 15.625rem;
-  }
-}
-@media only screen and (min-width:1140px) and (max-width:1320px) {
-  #banner{
-    height: 18.625rem;
-  }
-}
-@media only screen and (min-width: 1320px){
-  #banner{
-    height: 22rem;
-  }
-}
 
 
 /*
