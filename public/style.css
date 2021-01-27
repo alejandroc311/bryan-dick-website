@@ -8,14 +8,14 @@
 html, body{
   width: auto!important;
   overflow-x: hidden!important;
-  background-color: #ffffff;
+  background-color: #f4f5db;
   font-family: arial;
 
 }
 
 /*STYLE FOR NAV  #00274D;*/
 nav{
-  background-color: #f4f5db;
+  background-color: #ffffff;
 }
 
 #nav-container{
@@ -111,11 +111,12 @@ GLIDER FOR CONTENT IN INDEX PAGE
 */
 
 .btn{
-  background-color: #00274D;
+  background-color: #487e95;
 
 }
 .card{
   color: #00274D;
+  background-color: #f4f5db;
 }
 .card-title{
 
