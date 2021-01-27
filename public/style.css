@@ -16,6 +16,7 @@ html, body{
 /*STYLE FOR NAV  #00274D;*/
 nav{
   background-color: #ffffff;
+  font-size: 1.250rem;
 }
 
 #nav-container{
@@ -134,7 +135,7 @@ GLIDER FOR CONTENT IN INDEX PAGE
 .card{
   color: #00274D;
   background-color: #f4f5db;
-  border: none;
+  border-color: #00274D;
 }
 .card-title{
 
@@ -212,6 +213,8 @@ GLIDER FOR CONTENT IN INDEX PAGE
 @media only screen and (min-width:960px) and (max-width:1140px) {
   #content-glider{
     padding: 2.50rem;
+    padding-left: 5.625rem;
+    padding-right: 5.625rem;
   }
   .glider-contain{
     padding: 0px;
@@ -223,6 +226,8 @@ GLIDER FOR CONTENT IN INDEX PAGE
 }
 @media only screen and (min-width:1140px) and (max-width:1320px) {
   #content-glider{
+    padding-left: 5.625rem;
+    padding-right: 5.625rem;
     padding: 2.50rem;
   }
   .glider-contain{
@@ -235,7 +240,9 @@ GLIDER FOR CONTENT IN INDEX PAGE
 }
 @media only screen and (min-width:1320px){
   #content-glider{
-    padding: 2.50rem;
+    padding-left: 5.625rem;
+    padding-right: 5.625rem;
+    padding-top: 2.50rem;
   }
   .glider-contain{
     padding: 0px;
