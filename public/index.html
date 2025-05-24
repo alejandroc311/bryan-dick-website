@@ -1,18 +1,32 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!--CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Abogado Notario</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtw2AOA6JjpfBAyLZIHDc4iXyox0KlsL0&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+    <script src="./map.js"></script>
   </head>
   <body>
-  <nav class="navbar navbar-expand-lg navbar-light">
+    <!-- <nav class="navbar navbar-expand-lg navbar-light">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -32,155 +46,337 @@
         </li>
       </ul>
     </div>
-</nav>
-
-
-<div class="container-fluid" id="content-glider">
-  <div class="glider-contain">
-    <div class="glider">
-      <div class="card">
-        <img src="testamento.svg" class="card-img-top img-fluid" alt="">
-        <div class="card-body">
-          <h5 class="card-title card-text">Planificación Sucesoral y de Incapacidad</h5>
-          <p class="card-text">Preparación para el evento de su muerte o su incapacidad.</p>
-          <div class="d-flex justify-content-center">
-            <a href="testamentos.html" class="btn btn-dark border-0">Más Info</a>
-          </div>
+</nav> -->
+    <div style="display: flex; flex-direction: column">
+      <div
+        style="
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          height: auto;
+          width: 100vw;
+          background-color: white;
+          position: fixed;
+          z-index: 1;
+          padding: 8px;
+        "
+      >
+        <h5
+          style="
+            color: rgba(55, 125, 189, 255);
+            font-family: sans-serif;
+            margin: 0.5rem 0;
+          "
+        >
+          <a
+            href="index.html"
+            style="
+              text-decoration: none;
+              color: rgba(55, 125, 189, 255);
+              font-family: sans-serif;
+            "
+            >San Juan Notario</a
+          >
+        </h5>
+        <div class="d-flex justify-content-center">
+          <a href="tel:+17873023047" class="btn btn-dark border-0"
+            >Llamar Ahora</a
+          >
         </div>
-    </div>
-        <div class="card">
-          <img src="Herencia.svg" class="card-img-top img-fluid" alt="">
-            <div class="card-body">
-              <h5 class="card-title d-flex justify-content-center">Herencias</h5>
-              <p class="card-text"> Trámites dirigidos a traspasar los bienes del fallecido a sus herederos.</p>
-              <div class="d-flex justify-content-center">
-                <a href="herencias.html" class="btn btn-dark border-0">Más Info</a>
-              </div>
-            </div>
-        </div>
-        <div class="card">
-            <img src="bienes-raices.png" class="card-img-top img-fluid" alt="">
-            <div class="card-body">
-              <h5 class="card-title d-flex justify-content-center">Bienes Raices</h5>
-              <p class="card-text">Escrituras de compraventa de bienes raices y registro del título.</p>
-              <div class="d-flex justify-content-center">
-                <a href="raices.html" class="btn btn-dark border-0">Más Info</a>
-              </div>
-            </div>
-        </div>
-        <div class="card">
-            <img src="corporacion.svg" class="card-img-top" alt="">
-            <div class="card-body">
-              <h5 class="card-title d-flex justify-content-center">Corporaciones</h5>
-              <p class="card-text">Incorpórese para protegerse a sí y a sus bienes personales de demandas.</p>
-              <div class="d-flex justify-content-center">
-                <a href="corporaciones.html" class="btn btn-dark border-0">Más Info</a>
-              </div>
-
-            </div>
-          </div>
-        <div class="card">
-            <img src="power-attorney.png" class="card-img-top img-fluid" alt="">
-            <div class="card-body">
-              <h5 class="card-title d-flex justify-content-center">Poder</h5>
-              <p class="card-text">Autorice a un agente a hacer gestiones a nombre suyo o el de su negocio.</p>
-              <div class="d-flex justify-content-center">
-                <a href="poder.html" class="btn btn-dark border-0">Más Info</a>
-              </div>
-            </div>
-        </div>
-        <div class="card">
-          <img src="nupcias.png" class=" card-img-top img-fluid" alt="">
-          <div class="card-body">
-            <h5 class="card-title d-flex justify-content-center">Matrimonio</h5>
-            <p class="card-text">Trámites para la celebración del matrimonio en Puerto Rico</p>
-            <div class="d-flex justify-content-center">
-              <a href="matrimonio.html" class="btn btn-dark border-0">Más Info</a>
-            </div>
-          </div>
       </div>
-        <div class="card">
-            <img src="capitulaciones.svg" class=" card-img-top img-fluid" alt="">
-            <div class="card-body">
-              <h5 class="card-title d-flex justify-content-center">Capitulaciones</h5>
-              <p class="card-text">Proteja a su pareja, sus bienes personales y a sus negocios antes del matrimonio</p>
-              <div class="d-flex justify-content-center">
-                <a href="capitulaciones.html" class="btn btn-dark border-0">Más Info</a>
+
+      <div class="container-fluid" style="margin-top: 3rem" id="content-glider">
+        <div class="glider-contain">
+          <div class="glider">
+            <div class="card">
+              <img src="testamento.svg" class="card-img-top img-fluid" alt="" />
+              <div class="card-body">
+                <h5 class="card-title card-text">
+                  Planificación Sucesoral y de Incapacidad
+                </h5>
+                <p class="card-text">
+                  Preparación para el evento de su muerte o su incapacidad.
+                </p>
+                <div class="d-flex justify-content-center">
+                  <a href="testamentos.html" class="btn btn-dark border-0"
+                    >Más Info</a
+                  >
+                </div>
               </div>
             </div>
-        </div>
-        <div class="card">
-          <img src="divorce 2.svg" class=" card-img-top img-fluid" alt="">
-          <div class="card-body">
-            <h5 class="card-title d-flex justify-content-center">Divorcio</h5>
-            <p class="card-text">Disolución inmediata del vínculo matrimonial y estipulación de división de bienes y custodia</p>
-            <div class="d-flex justify-content-center">
-              <a href="divorcio.html" class="btn btn-dark border-0">Más Info</a>
+            <div class="card">
+              <img src="Herencia.svg" class="card-img-top img-fluid" alt="" />
+              <div class="card-body">
+                <h5 class="card-title d-flex justify-content-center">
+                  Herencias
+                </h5>
+                <p class="card-text">
+                  Trámites dirigidos a traspasar los bienes del fallecido a sus
+                  herederos.
+                </p>
+                <div class="d-flex justify-content-center">
+                  <a href="herencias.html" class="btn btn-dark border-0"
+                    >Más Info</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                src="bienes-raices.png"
+                class="card-img-top img-fluid"
+                alt=""
+              />
+              <div class="card-body">
+                <h5 class="card-title d-flex justify-content-center">
+                  Bienes Raices
+                </h5>
+                <p class="card-text">
+                  Escrituras de compraventa de bienes raices y registro del
+                  título.
+                </p>
+                <div class="d-flex justify-content-center">
+                  <a href="raices.html" class="btn btn-dark border-0"
+                    >Más Info</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="corporacion.svg" class="card-img-top" alt="" />
+              <div class="card-body">
+                <h5 class="card-title d-flex justify-content-center">
+                  Corporaciones
+                </h5>
+                <p class="card-text">
+                  Incorpórese para protegerse a sí y a sus bienes personales de
+                  demandas.
+                </p>
+                <div class="d-flex justify-content-center">
+                  <a href="corporaciones.html" class="btn btn-dark border-0"
+                    >Más Info</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                src="power-attorney.png"
+                class="card-img-top img-fluid"
+                alt=""
+              />
+              <div class="card-body">
+                <h5 class="card-title d-flex justify-content-center">Poder</h5>
+                <p class="card-text">
+                  Autorice a un agente a hacer gestiones a nombre suyo o el de
+                  su negocio.
+                </p>
+                <div class="d-flex justify-content-center">
+                  <a href="poder.html" class="btn btn-dark border-0"
+                    >Más Info</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="nupcias.png" class="card-img-top img-fluid" alt="" />
+              <div class="card-body">
+                <h5 class="card-title d-flex justify-content-center">
+                  Matrimonio
+                </h5>
+                <p class="card-text">
+                  Trámites para la celebración del matrimonio en Puerto Rico
+                </p>
+                <div class="d-flex justify-content-center">
+                  <a href="matrimonio.html" class="btn btn-dark border-0"
+                    >Más Info</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                src="capitulaciones.svg"
+                class="card-img-top img-fluid"
+                alt=""
+              />
+              <div class="card-body">
+                <h5 class="card-title d-flex justify-content-center">
+                  Capitulaciones
+                </h5>
+                <p class="card-text">
+                  Proteja a su pareja, sus bienes personales y a sus negocios
+                  antes del matrimonio
+                </p>
+                <div class="d-flex justify-content-center">
+                  <a href="capitulaciones.html" class="btn btn-dark border-0"
+                    >Más Info</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="divorce 2.svg" class="card-img-top img-fluid" alt="" />
+              <div class="card-body">
+                <h5 class="card-title d-flex justify-content-center">
+                  Divorcio
+                </h5>
+                <p class="card-text">
+                  Disolución inmediata del vínculo matrimonial y estipulación de
+                  división de bienes y custodia
+                </p>
+                <div class="d-flex justify-content-center">
+                  <a href="divorcio.html" class="btn btn-dark border-0"
+                    >Más Info</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                src="fideicomisos.png"
+                class="card-img-top img-fluid"
+                alt=""
+              />
+              <div class="card-body">
+                <h5 class="card-title d-flex justify-content-center">
+                  Fideicomisos
+                </h5>
+                <p class="card-text">
+                  Asegúrele una vida digna a sus seres queridos menores,
+                  incapaces, o pródigos
+                </p>
+                <div class="d-flex justify-content-center">
+                  <a href="fideicomiso.html" class="btn btn-dark border-0"
+                    >Más Info</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                src="hogar-seguro.png"
+                class="card-img-top img-fluid"
+                alt=""
+              />
+              <div class="card-body">
+                <h5 class="card-title d-flex justify-content-center">
+                  Hogar Seguro
+                </h5>
+                <p class="card-text">Proteja su casa de embargo y ejecución.</p>
+                <div class="d-flex justify-content-center">
+                  <a href="hogar.html" class="btn btn-dark border-0"
+                    >Más Info</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="notario.png" class="card-img-top img-fluid" alt="" />
+              <div class="card-body">
+                <h5 class="card-title d-flex justify-content-center">
+                  Affidavits
+                </h5>
+                <p class="card-text">Declaraciones Juradas y Notarías.</p>
+                <div class="d-flex justify-content-center">
+                  <a href="afidavit.html" class="btn btn-dark border-0"
+                    >Más Info</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                src="Traspaso de vehiculos.svg"
+                class="card-img-top img-fluid"
+                alt=""
+              />
+              <div class="card-body">
+                <h5 class="card-title d-flex justify-content-center">
+                  Traspaso de Vehículos
+                </h5>
+                <p class="card-text">
+                  Traspasar un vehículo o carro ante el CESCO.
+                </p>
+                <div class="d-flex justify-content-center">
+                  <a href="traspaso.html" class="btn btn-dark border-0"
+                    >Más Info</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="contrato.png" class="card-img-top img-fluid" alt="" />
+              <div class="card-body">
+                <h5 class="card-title d-flex justify-content-center">
+                  Contratos
+                </h5>
+                <p class="card-text">
+                  Contratos bien redactados son esenciales. Preparamos contratos
+                  de todo tipo.
+                </p>
+                <div class="d-flex justify-content-center">
+                  <a href="contratos.html" class="btn btn-dark border-0"
+                    >Más Info</a
+                  >
+                </div>
+              </div>
             </div>
           </div>
+          <button aria-label="Previous" class="glider-prev">«</button>
+          <button aria-label="Next" class="glider-next">»</button>
+          <div role="tablist" class="dots"></div>
+        </div>
       </div>
-        <div class="card">
-            <img src="fideicomisos.png" class="card-img-top img-fluid" alt="">
-            <div class="card-body">
-              <h5 class="card-title d-flex justify-content-center">Fideicomisos</h5>
-              <p class="card-text">Asegúrele una vida digna a sus seres queridos menores, incapaces, o pródigos</p>
-              <div class="d-flex justify-content-center">
-                <a href="fideicomiso.html" class="btn btn-dark border-0">Más Info</a>
-              </div>
-            </div>
-        </div>
-        <div class="card">
-            <img src="hogar-seguro.png" class="card-img-top img-fluid" alt="">
-            <div class="card-body">
-              <h5 class="card-title d-flex justify-content-center">Hogar Seguro</h5>
-              <p class="card-text">Proteja su casa de embargo y ejecución.</p>
-              <div class="d-flex justify-content-center">
-                <a href="hogar.html" class="btn btn-dark border-0">Más Info</a>
-              </div>
-            </div>
-        </div>
-        <div class="card">
-            <img src="notario.png" class="card-img-top img-fluid" alt="">
-            <div class="card-body">
-              <h5 class="card-title d-flex justify-content-center">Affidavits</h5>
-              <p class="card-text">Declaraciones Juradas y Notarías.</p>
-              <div class="d-flex justify-content-center">
-                <a href="afidavit.html" class="btn btn-dark border-0">Más Info</a>
-              </div>
-            </div>
-        </div>
-        <div class="card">
-          <img src="Traspaso de vehiculos.svg" class="card-img-top img-fluid" alt="">
-          <div class="card-body">
-            <h5 class="card-title d-flex justify-content-center">Traspaso de Vehículos</h5>
-            <p class="card-text">Traspasar un vehículo o carro ante el CESCO.</p>
-            <div class="d-flex justify-content-center">
-              <a href="traspaso.html" class="btn btn-dark border-0">Más Info</a>
-            </div>
-          </div>
+      <div
+        style="
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          height: auto;
+          width: 100vw;
+          background-color: #f4f5db;
+          color: #00274d;
+          padding: 8px;
+        "
+      >
+        <p class="card-text" style="margin: 0;">Tel: 787.302.3047</p>
+        <p class="card-text" style="margin: 0">
+          Dirección: #403, 12 de octubre St., San Juan, PR 00918
+        </p>
+        <p class="card-text" style="margin: 0">
+          Correspondencia: P.O. Box 194021, San Juan, PR 00919-4021
+        </p>
+        <p class="card-text" style="margin: 0">Email: info@sanjuan-legal.com</p>
       </div>
-      <div class="card">
-        <img src="contrato.png" class="card-img-top img-fluid" alt="">
-        <div class="card-body">
-          <h5 class="card-title d-flex justify-content-center">Contratos</h5>
-          <p class="card-text">Contratos bien redactados son esenciales. Preparamos contratos de todo tipo.</p>
-          <div class="d-flex justify-content-center">
-            <a href="contratos.html" class="btn btn-dark border-0">Más Info</a>
-          </div>
-        </div>
+      <div
+        style="
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        "
+      >
+        <div
+          id="gmp-map"
+          style="width: 400px; height: 400px; margin-bottom: 8px"
+        ></div>
+        <button
+          class="btn btn-dark border-0"
+          style="margin-bottom: 8px"
+          id="get-directions"
+        >
+          Direciones
+        </button>
+      </div>
     </div>
-    </div>
-    <button aria-label="Previous" class="glider-prev">«</button>
-    <button aria-label="Next" class="glider-next">»</button>
-    <div role="tablist" class="dots"></div>
-  </div>
-</div>
-
-
-
-
-
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
     <script src="glide.js"></script>
   </body>
