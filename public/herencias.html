@@ -1,18 +1,26 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!--CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Abogado Notario</title>
   </head>
   <body>
-  <!-- <nav class="navbar navbar-expand-lg navbar-light">
+    <!-- <nav class="navbar navbar-expand-lg navbar-light">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -33,24 +41,95 @@
       </ul>
     </div>
 </nav> -->
-<div
+    <div
+      style="
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: auto;
+        width: 100vw;
+        background-color: white;
+        position: fixed;
+        z-index: 1;
+        padding: 8px;
+        gap: 0.5rem;
+      "
+    >
+      <div
         style="
           display: flex;
           flex-direction: column;
-          align-items: center;
           justify-content: center;
+          align-items: center;
+        "
+      >
+        <div>
+          <a
+            class="bar-links"
+            href="index.html"
+            style="
+              color: rgba(55, 125, 189, 255);
+              font-family: Georgia, 'Times New Roman', Times, serif;
+              font-size: 1.25rem;
+              text-decoration: none;
+            "
+            onmouseover="this.style.color='#001f3a';"
+            onmouseout="this.style.color='rgba(55, 125, 189, 255)';"
+          >
+            Inicio
+          </a>
+        </div>
+      </div>
+      <div
+        style="
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        "
+      >
+        <div>
+          <a
+            class="bar-links"
+            style="
+              color: rgba(55, 125, 189, 255);
+              font-family: Georgia, 'Times New Roman', Times, serif;
+              font-size: 1.25rem;
+              text-decoration: none;
+            "
+            onmouseover="this.style.color='#001f3a';"
+            onmouseout="this.style.color='rgba(55, 125, 189, 255)';"
+            href="index.html#contacto"
+            >Contacto</a
+          >
+        </div>
+      </div>
+      <div
+        style="
+          visibility: hidden;
           height: auto;
-          width: 100vw;
-          background-color: white;
-          position: fixed;
-          z-index: 1;
-          padding: 8px;
+          position: static;
+          pointer-events: none;
+        "
+      >
+        <h5 style="margin: 0.5rem 0">San Juan Notario</h5>
+        <a class="btn btn-dark border-0">Llamar Ahora</a>
+      </div>
+      <div
+        style="
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
         "
       >
         <h5
           style="
             color: rgba(55, 125, 189, 255);
-            font-family: sans-serif;
+            font-family: Georgia, 'Times New Roman', Times, serif;
             margin: 0.5rem 0;
           "
         >
@@ -59,78 +138,119 @@
             style="
               text-decoration: none;
               color: rgba(55, 125, 189, 255);
-              font-family: sans-serif;
+              font-family: Georgia, 'Times New Roman', Times, serif;
             "
+            onmouseover="this.style.color='#001f3a';"
+            onmouseout="this.style.color='rgba(55, 125, 189, 255)';"
             >San Juan Notario</a
           >
         </h5>
-        <div class="d-flex justify-content-center">
+        <div>
           <a href="tel:+17873023047" class="btn btn-dark border-0"
             >Llamar Ahora</a
           >
         </div>
       </div>
-<div style="margin-top: 5rem;" class="d-flex flex-column justify-content-center align-items-center p-4">
-    <h5 class="mb-4" style="color: #00274D;">Herencias</h5>
-    <p style="color: #00274D;">
-        Herencias se refiere principalmente a aquellos trámites dirigidos a traspasar los bienes del fallecido a sus herederos.  Este proceso implica (1) validar la identidad de los herederos, (2) preparar y presentar una planilla de caudal relicto y obtener un relevo del Departamento de Hacienda y (3) registrar sus derechos sobre los bienes. El equipo de abogados de San Juan Notario gestiona todos los pasos necesarios para que los herederos no tengan que recurrir a múltiples profesionales, como contables o gestores. Además, se encargan de tramitar la documentación requerida y obtener la Resolución Declaratoria de Herederos.
-    </p>
-    <ol style="color: #00274D;">
+    </div>
+    <div
+      style="margin-top: 5rem"
+      class="d-flex flex-column justify-content-center align-items-center p-4"
+    >
+      <h5 class="mb-4" style="color: #00274d">Herencias</h5>
+      <p style="color: #00274d">
+        Herencias se refiere principalmente a aquellos trámites dirigidos a
+        traspasar los bienes del fallecido a sus herederos. Este proceso implica
+        (1) validar la identidad de los herederos, (2) preparar y presentar una
+        planilla de caudal relicto y obtener un relevo del Departamento de
+        Hacienda y (3) registrar sus derechos sobre los bienes. El equipo de
+        abogados de San Juan Notario gestiona todos los pasos necesarios para
+        que los herederos no tengan que recurrir a múltiples profesionales, como
+        contables o gestores. Además, se encargan de tramitar la documentación
+        requerida y obtener la Resolución Declaratoria de Herederos.
+      </p>
+      <ol style="color: #00274d">
         <li>Declaratoria de Herederos</li>
         <ul>
-            <li>
-                Es un proceso judicial que valida la identidad de los herederos en caso de que no exista testamento.  
-            </li>
-            <li>
-                La existencia de un testamento válido releva a los herederos de la necesidad de tramitar una Declaratoria de Herederos.  
-            </li>
-            <li>
-                Es un proceso rápido, pero requiere varios documentos, incluyendo: 
-            </li>
-            <ol>
-                <li>Certificados de Nacimiento</li>
-                <li>Certificados Matrimoniales</li>
-                <li>Certificados de Defunción</li>
-                <li>Certificación Negativa de Testamento</li>
-                <li>Certificación Negativa de Deudas de ASUME.  </li>
-            </ol>
-
+          <li>
+            Es un proceso judicial que valida la identidad de los herederos en
+            caso de que no exista testamento.
+          </li>
+          <li>
+            La existencia de un testamento válido releva a los herederos de la
+            necesidad de tramitar una Declaratoria de Herederos.
+          </li>
+          <li>
+            Es un proceso rápido, pero requiere varios documentos, incluyendo:
+          </li>
+          <ol>
+            <li>Certificados de Nacimiento</li>
+            <li>Certificados Matrimoniales</li>
+            <li>Certificados de Defunción</li>
+            <li>Certificación Negativa de Testamento</li>
+            <li>Certificación Negativa de Deudas de ASUME.</li>
+          </ol>
         </ul>
         <li>
-            Planilla de Caudal Relicto y Relevo de Hacienda - Los abogados de San Juan Notario tienen licencia para tramitar la Planilla de Caudal Relicto y el Relevo de Hacienda.
+          Planilla de Caudal Relicto y Relevo de Hacienda - Los abogados de San
+          Juan Notario tienen licencia para tramitar la Planilla de Caudal
+          Relicto y el Relevo de Hacienda.
         </li>
         <ul>
+          <li>
+            La planilla de caudal relicto es un documento que debe presentarse
+            ante el Departamento de Hacienda no más tarde del año siguiente al
+            fallecimiento del causante, describiendo las propiedades del
+            causante y su valor base al momento de su adquisición.
+          </li>
+          <li>
+            Se acompaña con una certificación de deuda para todos los conceptos
+            (incluyendo el Impuesto sobre Ventas y Uso) emitida por el
+            Departamento de Hacienda y certificaciones de deuda mueble e
+            inmueble emitida por el Centro de Recaudación de Ingresos
+            Municipales (CRIM).
+          </li>
+          <li>
+            El relevo de Hacienda se refiere a la certificación de cancelación
+            de gravamen contributivo que emite Hacienda una vez concluye que la
+            persona fallecida y sus propiedades están libres de deudas con el
+            Estado.
+          </li>
+          <ol>
             <li>
-                La planilla de caudal relicto es un documento que debe presentarse ante el Departamento de Hacienda no más tarde del año siguiente al fallecimiento del causante, describiendo las propiedades del causante y su valor base al momento de su adquisición.  
+              El relevo usualmente es necesario para poder inscribir una
+              propiedad a nombre de los herederos y para poder efectuar otros
+              trámites, incluyendo la venta o refinanciamiento de los bienes.
             </li>
-            <li>
-                Se acompaña con una certificación de deuda para todos los conceptos (incluyendo el Impuesto sobre Ventas y Uso) emitida por el Departamento de Hacienda y certificaciones de deuda mueble e inmueble emitida por el Centro de Recaudación de Ingresos Municipales (CRIM). 
-            </li>
-            <li>
-                El relevo de Hacienda se refiere a la certificación de cancelación de gravamen contributivo que emite Hacienda una vez concluye que la persona fallecida y sus propiedades están libres de deudas con el Estado.
-            </li>
-            <ol>
-                <li>
-                    El relevo usualmente es necesario para poder inscribir una propiedad a nombre de los herederos y para poder efectuar otros trámites, incluyendo la venta o refinanciamiento de los bienes.
-                </li>
-            </ol>
+          </ol>
         </ul>
         <li>
-            Registro de Derecho de los Herederos - El equipo de abogados de San Juan Notario se encarga de preparar y presentar todos los contratos y escrituras públicas necesarias para inscribir sus derechos hereditarios.
+          Registro de Derecho de los Herederos - El equipo de abogados de San
+          Juan Notario se encarga de preparar y presentar todos los contratos y
+          escrituras públicas necesarias para inscribir sus derechos
+          hereditarios.
         </li>
         <ul>
-            <li>
-                Luego de identificar oficialmente a los herederos mediante Declaratoria de Herederos o Testamento y de obtener el Relevo de Hacienda, es posible presentar dichos documentos ante cualquier entidad, incluyendo el Registro de la Propiedad, para que se le reconozca su título.
-            </li>
-            <li>
-                Se podrá traspasar la propiedad a cualquier persona, incluyendo uno de los herederos, si así lo desean.
-            </li>
+          <li>
+            Luego de identificar oficialmente a los herederos mediante
+            Declaratoria de Herederos o Testamento y de obtener el Relevo de
+            Hacienda, es posible presentar dichos documentos ante cualquier
+            entidad, incluyendo el Registro de la Propiedad, para que se le
+            reconozca su título.
+          </li>
+          <li>
+            Se podrá traspasar la propiedad a cualquier persona, incluyendo uno
+            de los herederos, si así lo desean.
+          </li>
         </ul>
-    </ol>
-</div>
+      </ol>
+    </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
-<script src="glide.js"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+    <script src="glide.js"></script>
+  </body>
 </html>

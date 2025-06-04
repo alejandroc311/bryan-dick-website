@@ -25,6 +25,9 @@ nav{
 }
 
 @media only screen and (max-width:400px){
+  .bar-links {
+    font-size: 1rem!important;
+  }
   .navbar{
     padding: 1.250rem;
     text-decoration-color: white;
@@ -39,6 +42,9 @@ nav{
 }
 
 @media only screen and (min-width:400px) and (max-width:500px) {
+  .bar-links {
+    font-size: 1rem!important;
+  }
   .navbar{
     padding: 1.250rem;
     padding-top: 0px;

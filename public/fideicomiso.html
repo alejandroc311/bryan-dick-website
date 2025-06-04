@@ -1,18 +1,26 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!--CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Abogado Notario</title>
   </head>
   <body>
-  <!-- <nav class="navbar navbar-expand-lg navbar-light">
+    <!-- <nav class="navbar navbar-expand-lg navbar-light">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -33,24 +41,95 @@
       </ul>
     </div>
 </nav> -->
-<div
+    <div
+      style="
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: auto;
+        width: 100vw;
+        background-color: white;
+        position: fixed;
+        z-index: 1;
+        padding: 8px;
+        gap: 0.5rem;
+      "
+    >
+      <div
         style="
           display: flex;
           flex-direction: column;
-          align-items: center;
           justify-content: center;
+          align-items: center;
+        "
+      >
+        <div>
+          <a
+            class="bar-links"
+            href="index.html"
+            style="
+              color: rgba(55, 125, 189, 255);
+              font-family: Georgia, 'Times New Roman', Times, serif;
+              font-size: 1.25rem;
+              text-decoration: none;
+            "
+            onmouseover="this.style.color='#001f3a';"
+            onmouseout="this.style.color='rgba(55, 125, 189, 255)';"
+          >
+            Inicio
+          </a>
+        </div>
+      </div>
+      <div
+        style="
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        "
+      >
+        <div>
+          <a
+            class="bar-links"
+            style="
+              color: rgba(55, 125, 189, 255);
+              font-family: Georgia, 'Times New Roman', Times, serif;
+              font-size: 1.25rem;
+              text-decoration: none;
+            "
+            onmouseover="this.style.color='#001f3a';"
+            onmouseout="this.style.color='rgba(55, 125, 189, 255)';"
+            href="index.html#contacto"
+            >Contacto</a
+          >
+        </div>
+      </div>
+      <div
+        style="
+          visibility: hidden;
           height: auto;
-          width: 100vw;
-          background-color: white;
-          position: fixed;
-          z-index: 1;
-          padding: 8px;
+          position: static;
+          pointer-events: none;
+        "
+      >
+        <h5 style="margin: 0.5rem 0">San Juan Notario</h5>
+        <a class="btn btn-dark border-0">Llamar Ahora</a>
+      </div>
+      <div
+        style="
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
         "
       >
         <h5
           style="
             color: rgba(55, 125, 189, 255);
-            font-family: sans-serif;
+            font-family: Georgia, 'Times New Roman', Times, serif;
             margin: 0.5rem 0;
           "
         >
@@ -59,25 +138,48 @@
             style="
               text-decoration: none;
               color: rgba(55, 125, 189, 255);
-              font-family: sans-serif;
+              font-family: Georgia, 'Times New Roman', Times, serif;
             "
+            onmouseover="this.style.color='#001f3a';"
+            onmouseout="this.style.color='rgba(55, 125, 189, 255)';"
             >San Juan Notario</a
           >
         </h5>
-        <div class="d-flex justify-content-center">
+        <div>
           <a href="tel:+17873023047" class="btn btn-dark border-0"
             >Llamar Ahora</a
           >
         </div>
       </div>
-<div style="margin-top: 5rem;" class="d-flex flex-column justify-content-center align-items-center p-4">
-    <h5 class="mb-4" style="color: #00274D;">Fideicomisos</h5>
-    <p class="mb-2" style="color: #00274D;">El fideicomiso es un arreglo mediante el cual una persona administra un caudal de bienes para beneficio de otra, siguiendo los objetivos establecidos por el fundador.  El caudal está separado de los patrimonios del fundador/a, el administrador/a y del beneficiario/a y por lo tanto está exento de cobro y embargo de parte de los acreedores de esas personas.  El fideicomiso constituye así una medida para la protección de bienes. </p>
-    <p class="mb-2" style="color: #00274D;">Se puede constituir un fideicomiso sobre los bienes que herede un menor de edad o incapacitado, pudiendo así una persona sin patria potestad o tutela controlar el caudal hereditario correspondiente al menor mientras el menor cumple la mayoría de edad o mientras dure la incapacidad.   </p>
-</div>
+    </div>
+    <div
+      style="margin-top: 5rem"
+      class="d-flex flex-column justify-content-center align-items-center p-4"
+    >
+      <h5 class="mb-4" style="color: #00274d">Fideicomisos</h5>
+      <p class="mb-2" style="color: #00274d">
+        El fideicomiso es un arreglo mediante el cual una persona administra un
+        caudal de bienes para beneficio de otra, siguiendo los objetivos
+        establecidos por el fundador. El caudal está separado de los patrimonios
+        del fundador/a, el administrador/a y del beneficiario/a y por lo tanto
+        está exento de cobro y embargo de parte de los acreedores de esas
+        personas. El fideicomiso constituye así una medida para la protección de
+        bienes.
+      </p>
+      <p class="mb-2" style="color: #00274d">
+        Se puede constituir un fideicomiso sobre los bienes que herede un menor
+        de edad o incapacitado, pudiendo así una persona sin patria potestad o
+        tutela controlar el caudal hereditario correspondiente al menor mientras
+        el menor cumple la mayoría de edad o mientras dure la incapacidad.
+      </p>
+    </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
-<script src="glide.js"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+    <script src="glide.js"></script>
+  </body>
 </html>
